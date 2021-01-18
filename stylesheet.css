@@ -1,0 +1,183 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body{
+    height:100%; 
+}
+
+body{
+    font-family: 'Roboto Mono', sans-serif;
+    background-color: #d2ccff ;
+    font-size:20px;
+    line-height: 1.5;
+}
+
+header,footer{
+    display:flex;
+    width:100%;
+    background-color:#3c436b;
+    color:white;
+    overflow: hidden;
+}
+nav ul{
+    display: flex;
+    
+}
+nav li{
+    list-style-type:none;
+}
+
+nav a:visited,
+nav a:link,
+.follow{
+    color: #fff;
+    float:left;
+    text-decoration:none;
+    padding:10px;
+    
+}
+
+nav a:hover{
+    background-color: #000318;
+}
+
+.searchBar input[type=text]{
+    background-color: #d2ccff;
+    border:none;    
+    font-size: inherit;
+    margin: 3px;
+    padding:10px;
+}
+/*.fa fa-search{
+    display:inline-block;
+}*/
+
+main{
+    padding-bottom: 3em;
+    min-height: 85%;
+
+}
+/*h1{
+    text-align: center;
+}*/
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 15%;
+
+}
+.column{
+    flex:25%;
+    max-width:40%;
+    padding: 10px;
+   
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    
+}
+
+div.container img{
+  
+    max-width:100%;
+    margin-top:12px;
+    vertical-align: middle;
+ 
+}
+
+.content{
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding:20px;
+    cursor: pointer;
+  
+    
+}
+
+.row:after{
+    content:"";
+    display:table;
+    clear:both;
+}
+
+.close-button{
+    float: right;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.containerTab{
+    display:none;
+    width: 80%;
+    height: 80%;
+    background-color:pink;
+    position:fixed;
+    left:10%;
+    top:10%;
+    bottom:10%;
+    right:10%;
+    padding:15px;
+    overflow:auto;
+    color:white;
+    background-color: rgba(0,0,0,0.85);
+}
+.tab-styling{
+
+    font-size: inherit;
+    color: #e2e6fe;
+    text-align: left;
+}
+
+.tab-styling p{
+    padding-top:5px;
+    text-indent:30px;
+    letter-spacing: 1px;
+}
+footer{
+    justify-content: space-evenly;
+}
+@media only screen and (max-width: 768px){
+  
+  
+    nav ul{
+        flex-direction: column;
+        flex-wrap:wrap;
+        align-items: center;
+    }
+    header, 
+    footer{
+        display:block;
+        text-align: center;
+    }
+    main{
+        display: flex;
+        padding:0;
+    }
+    .row{
+        margin-left: 0%;
+    }
+    .column{
+        flex:100%;
+        max-width: 100%;
+    }
+    .content{
+        font-size: 50%;
+    }
+    .containerTab{
+        left:5%;
+        top:10%;
+        bottom:5%;
+        right:5%;
+    }
+}
+
